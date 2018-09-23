@@ -6,7 +6,7 @@ class SchoolClassesController < ApplicationController
 
 
   def create
-    @school_class = SchoolClass.new(title: params[:title], room_number: params[:room_number])
+    @school_class = SchoolClass.new(title: params[:school_class][:title], room_number: params[:school_class][:room_number])
     @school_class.save
   end
 
