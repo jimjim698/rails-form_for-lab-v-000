@@ -1,21 +1,21 @@
 class StudentsController < ApplicationController
-  
 
-  def new 
+
+  def new
     @student = Student.new 
-  end 
+  end
 
-  def create 
-  end 
+  def create
+  end
 
-  def show 
-  end 
+  def show
+  end
 
-  def edit 
-  end 
+  def edit
+  end
 
   def update
-  end 
+  end
 
 
-end 
+end
