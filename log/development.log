@@ -1924,3 +1924,15 @@ rubocop \
   --auto-correct
 
 . (called from block (2 levels) in <top (required)> at /home/jimjim698/rails-form_for-lab-v-000/spec/factories/students.rb:4)
+
+
+Started GET "/school_classes/new" for 73.65.241.186 at 2018-09-23 23:50:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#new as HTML
+  Rendered school_classes/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 301ms (Views: 283.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/school_classes" for 73.65.241.186 at 2018-09-23 23:50:38 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n03OlK6nG5/eR7yxX+WQyZ4ccpsPkKXjQkzGplJ0CkFxOBepzZZsU0k1MxuunJF5qBPoCwFk09ywOSMDkLImvQ==", "school_class"=>{"title"=>"math", "room_number"=>"3"}, "commit"=>"Create School class"}
