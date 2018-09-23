@@ -1,6 +1,7 @@
 class SchoolClassesController < ApplicationController
 
   def new
+    @school_classes = SchoolClass.all
   end
 
 
@@ -14,4 +15,4 @@ class SchoolClassesController < ApplicationController
   end
 
 
-end 
+end
