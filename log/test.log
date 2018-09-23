@@ -387,6 +387,7 @@ Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "students"[0m
 Processing by StudentsController#create as HTML
   Parameters: {"student"=>{"first_name"=>"Bill", "last_name"=>"Smith"}}
+<<<<<<< HEAD
 Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
   [1m[35m (0.2ms)[0m  rollback transaction
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
@@ -512,3 +513,5 @@ Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Daenerys"], ["last_name", "Targaryen"], ["created_at", "2018-09-23 01:08:04.952047"], ["updated_at", "2018-09-23 01:08:04.952047"]]
   [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
   [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+=======
+>>>>>>> 7a853948f49988074f8c0949e073f435e1084a67
