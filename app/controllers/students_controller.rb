@@ -20,7 +20,15 @@ class StudentsController < ApplicationController
   end
 
   def update
+    @student = Student.find(params[:id])
+    
   end
 
+
+  private 
+
+  def student_params(*args)
+    params.require(:student).permit(*args)
+  end 
 
 end
