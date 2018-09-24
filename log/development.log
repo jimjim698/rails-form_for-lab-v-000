@@ -2345,3 +2345,27 @@ ActionView::MissingTemplate (Missing template students/show, application/show wi
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (43.2ms)
+
+
+Started POST "/students" for 73.65.241.186 at 2018-09-24 00:17:33 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EP15eDl60Ldlmm/DNm5cnula7YlwK8mRQ6q7P4p8A2L+iKBFWkune/Lo4GnHF10u31V3GX7fv66x316aSLovng==", "student"=>{"first_name"=>"Jim", "last_name"=>"Lots"}, "commit"=>"Create Student"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Jim"], ["last_name", "Lots"], ["created_at", "2018-09-24 00:17:33.507067"], ["updated_at", "2018-09-24 00:17:33.507067"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://165.227.60.187:47760/students/4
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/students/4" for 73.65.241.186 at 2018-09-24 00:17:33 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendered students/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/4" for 73.65.241.186 at 2018-09-24 00:17:45 +0000
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendered students/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
