@@ -2211,3 +2211,10 @@ Processing by StudentsController#new as HTML
 DEPRECATION WARNING: The file /home/jimjim698/rails-form_for-lab-v-000/app/views/students/new did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308)
   Rendered students/new.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for 73.65.241.186 at 2018-09-24 00:11:28 +0000
+Processing by StudentsController#new as HTML
+DEPRECATION WARNING: The file /home/jimjim698/rails-form_for-lab-v-000/app/views/students/new did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from realtime at /usr/local/rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308)
+  Rendered students/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
